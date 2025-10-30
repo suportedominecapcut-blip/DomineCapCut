@@ -22,7 +22,7 @@ export function OfferSection() {
           <Button
             asChild
             size="lg"
-            className="h-14 px-12 text-lg font-bold animate-pulse"
+            className="h-14 px-12 text-lg font-bold animate-scale-in-out"
           >
             <Link href="https://pagamento.seulink.com/capcut">
               Comprar Agora

@@ -47,7 +47,7 @@ export function CountdownBanner() {
             {formatTime(timeLeft)}
           </span>
         </div>
-        <Button asChild size="sm" className="font-bold animate-pulse">
+        <Button asChild size="sm" className="font-bold animate-scale-in-out text-xs h-8 px-3">
             <Link href="#oferta">Garantir Desconto</Link>
         </Button>
         <button

@@ -45,7 +45,7 @@ export function HeroSection() {
               seu celular — mesmo que nunca tenha editado antes!
             </p>
             <div className="flex flex-col gap-4 min-[400px]:flex-row">
-              <Button asChild size="lg" className="font-bold animate-pulse">
+              <Button asChild size="lg" className="font-bold animate-scale-in-out">
                 <Link href="#oferta">Quero Começar Agora</Link>
               </Button>
             </div>
