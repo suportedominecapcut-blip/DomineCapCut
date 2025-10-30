@@ -6,7 +6,6 @@ import { TestimonialsSection } from '@/components/landing/TestimonialsSection';
 import { FaqSection } from '@/components/landing/FaqSection';
 import { GuaranteeSection } from '@/components/landing/GuaranteeSection';
 import { Footer } from '@/components/landing/Footer';
-import { ResultsSection } from '@/components/landing/ResultsSection';
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
           <PainPointsSection />
         </section>
         <SolutionSection />
-        <ResultsSection />
         <section className="w-full light bg-background text-foreground">
           <OfferSection />
         </section>
