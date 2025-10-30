@@ -31,8 +31,8 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
               Curso CapCut + E-book “Como Ganhar Dinheiro com Edição de Vídeos”!
             </p>
             <p className="text-xl font-bold text-foreground">
-              🔥 Tudo isso por apenas{" "}
-              <span className="text-primary">R$29,90</span>
+              🔥 Tudo isso de <span className="line-through">R$247,00</span> por apenas{" "}
+              <span className="text-primary text-2xl">R$29,90</span>
             </p>
             <p className="font-semibold">
               Mas atenção: essa condição é por tempo LIMITADO!
@@ -48,7 +48,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
               href="https://pay.lowify.com.br/checkout?product_id=EDxGrQ"
             >
-              👉 Garanta agora o seu acesso!
+              👉 Quero a promoção!
             </Link>
           </AlertDialogAction>
         </AlertDialogFooter>
