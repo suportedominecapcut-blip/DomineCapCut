@@ -19,7 +19,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>{children}</AlertDialogTrigger>
-      <AlertDialogContent className="w-full max-w-md border-primary/50 bg-gradient-to-br from-secondary to-background shadow-lg shadow-primary/20 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
+      <AlertDialogContent className="w-full max-w-md mx-4 border-primary/50 bg-gradient-to-br from-secondary to-background shadow-lg shadow-primary/20 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
         <AlertDialogHeader className="items-center text-center">
           <PartyPopper className="h-12 w-12 text-primary animate-bounce" />
           <AlertDialogTitle className="text-2xl font-bold text-primary">
@@ -28,7 +28,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
           <AlertDialogDescription className="text-base text-foreground/80 space-y-3 pt-2">
             <p>
               Você acabou de receber uma <strong>OFERTA ESPECIAL</strong> do
-              Curso CapCut + E-book “Como Ganhar Dinheiro com Edição de Vídeos”!
+              Curso CapCut + E-book “Como Ganhar Dinheiro com Edição de Vídeos” + E-book “Como Editar No CapCut Com IA”!
             </p>
             <p className="text-xl font-bold text-foreground">
               🔥 Tudo isso de{" "}
