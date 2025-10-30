@@ -109,7 +109,7 @@ export default {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'scale-in-out': 'scale-in-out 4s ease-in-out infinite',
-        'slow-pulse': 'slow-pulse 8s ease-in-out infinite',
+        'slow-pulse': 'slow-pulse 12s ease-in-out infinite',
         'rocket-takeoff': 'rocket-takeoff 4s ease-in-out infinite',
       },
     },
