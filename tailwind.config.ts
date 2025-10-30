@@ -14,6 +14,10 @@ export default {
         headline: ['Poppins', 'sans-serif'],
         code: ['monospace'],
       },
+      fontWeight: {
+        regular: '400',
+        bold: '700',
+      },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
