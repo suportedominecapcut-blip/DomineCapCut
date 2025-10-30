@@ -34,7 +34,7 @@ export function SolutionSection() {
             {benefits.map((benefit, index) => (
               <li key={index} className="flex items-start gap-2">
                 <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                <span className="text-muted-foreground">{benefit.text}</span>
+                <span className="text-muted-foreground text-base">{benefit.text}</span>
               </li>
             ))}
           </ul>
