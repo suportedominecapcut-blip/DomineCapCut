@@ -1,4 +1,5 @@
 import { CheckCircle2 } from 'lucide-react';
+import Image from 'next/image';
 
 const benefits = [
   { text: 'Criar vídeos com impacto visual que prendem a atenção.' },
@@ -32,11 +33,11 @@ export function SolutionSection() {
           </ul>
         </div>
         <div className="relative flex h-full min-h-[400px] items-center justify-center">
-            <img
-                src="https://i.imgur.com/xOAGdGn.jpg"
-                alt="Mulher editando vídeo no celular com o app CapCut e notas de dinheiro ao lado"
+            <Image
+                src="https://images.unsplash.com/photo-1593438997576-6972454b5239?q=80&w=1887&auto=format&fit=crop"
+                alt="Mulher feliz editando vídeo no celular e vendo retorno financeiro"
                 width={500}
-                height={333}
+                height={750}
                 className="rounded-2xl object-cover shadow-2xl shadow-primary/20 transition-transform duration-500 hover:scale-105"
                 data-ai-hint="capcut money"
             />
