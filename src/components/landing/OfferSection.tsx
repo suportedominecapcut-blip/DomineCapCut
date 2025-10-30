@@ -6,7 +6,7 @@ export function OfferSection() {
     <div id="oferta" className="container mx-auto px-4 py-12 md:px-6 md:py-24 lg:py-32">
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="font-headline text-sm font-semibold uppercase tracking-widest text-primary">
-          Oferta de Lançamento
+          Oferta Válida Somente Hoje
         </h2>
         <p className="mt-4 text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
           De <span className="line-through decoration-red-500">R$197,00</span> por
