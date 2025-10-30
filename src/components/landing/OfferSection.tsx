@@ -19,7 +19,11 @@ export function OfferSection() {
          🔥 Aulas curtas, diretas ao ponto e 100% práticas para você aplicar e ver resultados imediatos.
         </p>
         <div className="mt-10">
-          <Button asChild size="lg" className="h-14 px-12 text-lg font-bold">
+          <Button
+            asChild
+            size="lg"
+            className="h-14 px-12 text-lg font-bold animate-pulse"
+          >
             <Link href="https://pagamento.seulink.com/capcut">
               Comprar Agora
             </Link>
