@@ -19,7 +19,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>{children}</AlertDialogTrigger>
-      <AlertDialogContent className="w-full max-w-md mx-4 border-primary/50 bg-gradient-to-br from-secondary to-background shadow-lg shadow-primary/20 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
+      <AlertDialogContent className="w-[calc(100%-2rem)] max-w-md border-primary/50 bg-gradient-to-br from-secondary to-background shadow-lg shadow-primary/20 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
         <AlertDialogHeader className="items-center text-center">
           <PartyPopper className="h-12 w-12 text-primary animate-bounce" />
           <AlertDialogTitle className="text-2xl font-bold text-primary">
@@ -27,9 +27,13 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
           </AlertDialogTitle>
           <AlertDialogDescription className="text-base text-foreground/80 space-y-3 pt-2">
             <p>
-              Você acabou de receber uma <strong>OFERTA ESPECIAL</strong> do
-              Curso CapCut + E-book “Como Ganhar Dinheiro com Edição de Vídeos” + E-book “Como Editar No CapCut Com IA”!
+              Parabéns! Você ganhou acesso a uma <strong>OFERTA ESPECIAL</strong> que inclui:
             </p>
+            <ul className="list-disc list-inside text-left mx-auto max-w-sm space-y-1">
+                <li>Curso Completo Domine o CapCut</li>
+                <li>E-book: Como Ganhar Dinheiro com Edição</li>
+                <li>E-book: Como Editar com IA no CapCut</li>
+            </ul>
             <p className="text-xl font-bold text-foreground">
               🔥 Tudo isso de{" "}
               <span className="line-through">R$247,00</span> por apenas{" "}
