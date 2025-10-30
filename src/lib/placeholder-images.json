@@ -17,6 +17,24 @@
       "description": "Happy student working",
       "imageUrl": "https://images.unsplash.com/photo-1543270122-f7a11ad44f3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjB3b3JraW5nfGVufDB8fHx8MTc2MTY3NjczNnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person working"
+    },
+    {
+      "id": "result-1",
+      "description": "Person editing video on phone with CapCut app open",
+      "imageUrl": "https://images.unsplash.com/photo-1584012123175-57cb844ff01a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjYXBjdXQlMjBwaG9uZXxlbnwwfHx8fDE3NjE3OTgzMjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "capcut phone"
+    },
+    {
+      "id": "result-2",
+      "description": "Person holding phone editing video with Brazilian money in the background",
+      "imageUrl": "https://images.unsplash.com/photo-1506645292803-579c17d4ba6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx2aWRlbyUyMGVkaXRpbmclMjBtb25leXxlbnwwfHx8fDE3NjE3OTgzMjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "video editing money"
+    },
+    {
+      "id": "result-3",
+      "description": "Woman looking at phone with sales notifications popping up",
+      "imageUrl": "https://images.unsplash.com/photo-1743529628081-6777a326a4e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGhvbmUlMjBzYWxlc3xlbnwwfHx8fDE3NjE3OTgzMjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "phone sales"
     }
   ]
 }
