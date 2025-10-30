@@ -53,7 +53,9 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
           </AlertDialogCancel>
           <AlertDialogAction asChild>
             <Link
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold animate-scale-in-out"
+              className={`${buttonVariants({
+                variant: "default",
+              })} animate-scale-in-out`}
               href="https://pay.lowify.com.br/checkout?product_id=bAPgxy"
             >
               👉 Quero a promoção!
