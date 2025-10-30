@@ -1,5 +1,4 @@
 import { CheckCircle2 } from 'lucide-react';
-import Image from 'next/image';
 
 const benefits = [
   { text: 'Criar vídeos com impacto visual que prendem a atenção.' },
@@ -11,8 +10,8 @@ const benefits = [
 export function SolutionSection() {
   return (
     <div className="container mx-auto px-4 py-12 md:px-6 md:py-24 lg:py-32">
-      <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-24">
-        <div className="flex flex-col justify-center space-y-6">
+      <div className="grid items-center gap-12">
+        <div className="flex flex-col justify-center space-y-6 lg:col-span-2 text-center items-center">
           <div className="space-y-3">
             <h2 className="font-headline text-3xl font-bold tracking-tighter text-primary sm:text-4xl md:text-5xl">
               A Solução: CapCut Pro em 3 Dias
@@ -23,7 +22,7 @@ export function SolutionSection() {
               dinheiro.
             </p>
           </div>
-          <ul className="grid gap-4">
+          <ul className="grid gap-4 max-w-md text-left">
             {benefits.map((benefit, index) => (
               <li key={index} className="flex items-start gap-2">
                 <CheckCircle2 className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
@@ -31,15 +30,6 @@ export function SolutionSection() {
               </li>
             ))}
           </ul>
-        </div>
-        <div className="relative min-h-[400px] w-full h-full rounded-2xl overflow-hidden shadow-2xl shadow-primary/20 transition-transform duration-500 hover:scale-105">
-          <Image
-            src="https://images.unsplash.com/photo-1593438997576-6972454b5239?q=80&w=1887&auto=format&fit=crop"
-            alt="Mulher feliz editando vídeo no celular e vendo retorno financeiro"
-            fill
-            className="object-cover"
-            data-ai-hint="capcut money"
-          />
         </div>
       </div>
     </div>
