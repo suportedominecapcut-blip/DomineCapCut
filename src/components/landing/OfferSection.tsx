@@ -29,10 +29,12 @@ export function OfferSection() {
           <OfferModal>
             <Button
               size="lg"
-              className="h-14 px-12 text-lg font-bold animate-scale-in-out"
+              className="relative h-14 overflow-hidden rounded-lg px-12 text-lg font-bold shadow-2xl shadow-primary/40 transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-white/50 before:duration-100 before:ease-linear hover:bg-primary/90 hover:shadow-primary/60 hover:before:border-[25px] active:scale-95 animate-pulse"
             >
-              <Rocket className="mr-2 h-6 w-6" />
-              Comprar Agora
+              <span className="relative z-10 flex items-center">
+                <Rocket className="mr-2 h-6 w-6" />
+                Comprar Agora
+              </span>
             </Button>
           </OfferModal>
         </div>
