@@ -1,10 +1,27 @@
+"use client"
+
 import { Button } from '@/components/ui/button';
 import { PlayCircle } from 'lucide-react';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 export function HeroSection() {
+  const [currentDate, setCurrentDate] = useState('');
+
+  useEffect(() => {
+    const date = new Date();
+    const formattedDate = new Intl.DateTimeFormat('pt-BR', {
+      day: '2-digit',
+      month: '2-digit',
+    }).format(date);
+    setCurrentDate(formattedDate);
+  }, []);
+
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className="w-full pt-12 md:pt-24 lg:pt-32">
+      <div className="w-full bg-primary text-primary-foreground py-2 text-center text-sm md:text-base font-bold mb-8">
+        Oferta Válida Somente Hoje ({currentDate})
+      </div>
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-6">
