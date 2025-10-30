@@ -11,7 +11,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { PartyPopper } from "lucide-react";
 import Link from "next/link";
 
@@ -39,14 +39,19 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
             </p>
           </AlertDialogDescription>
         </AlertDialogHeader>
-        <AlertDialogFooter className="flex-col-reverse gap-2 sm:flex-row">
+        <AlertDialogFooter className="flex-col-reverse gap-2 sm:flex-row sm:justify-center">
           <AlertDialogCancel asChild>
-            <Button variant="outline">Fechar</Button>
+            <Link
+              className={buttonVariants({ variant: "outline" })}
+              href="https://pay.lowify.com.br/checkout?product_id=EDxGrQ"
+            >
+              Quero continuar sem o bônus
+            </Link>
           </AlertDialogCancel>
           <AlertDialogAction asChild>
             <Link
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
-              href="https://pay.lowify.com.br/checkout?product_id=EDxGrQ"
+              href="https://pay.lowify.com.br/checkout?product_id=bAPgxy"
             >
               👉 Quero a promoção!
             </Link>
