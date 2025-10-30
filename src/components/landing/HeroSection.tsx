@@ -32,10 +32,11 @@ export function HeroSection() {
             <div className="flex w-full items-center justify-center">
               <div className="group relative aspect-video w-full max-w-3xl overflow-hidden rounded-xl shadow-2xl shadow-primary/20">
                 <Image
-                  src="https://imgur.com/mWwxe2Y.png"
-                  alt="Apresentação do Curso CapCut"
+                  src="https://i.imgur.com/xOAGdGn.jpg"
+                  alt="Mulher editando vídeo no celular com o CapCut e notas de dinheiro ao lado"
                   fill
                   className="object-cover"
+                  data-ai-hint="capcut money"
                 />
               </div>
             </div>
