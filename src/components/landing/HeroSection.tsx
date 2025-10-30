@@ -45,7 +45,7 @@ export function HeroSection() {
             </p>
             <div className="flex flex-col gap-4 min-[400px]:flex-row">
               <Button asChild size="lg" className="font-bold animate-scale-in-out">
-                <Link href="#oferta">Quero Começar Agora</Link>
+                <Link href="https://pay.lowify.com.br/checkout?product_id=EDxGrQ">Quero Começar Agora</Link>
               </Button>
             </div>
             <div className="pt-6 space-y-2 text-sm text-muted-foreground">

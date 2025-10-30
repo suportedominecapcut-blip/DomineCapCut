@@ -25,7 +25,7 @@ export function OfferSection() {
             size="lg"
             className="h-14 px-12 text-lg font-bold animate-scale-in-out"
           >
-            <Link href="https://pagamento.seulink.com/capcut">
+            <Link href="https://pay.lowify.com.br/checkout?product_id=EDxGrQ">
               <Rocket className="mr-2 h-6 w-6" />
               Comprar Agora
             </Link>
