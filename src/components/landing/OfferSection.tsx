@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import { Rocket } from 'lucide-react';
 import Link from 'next/link';
 
 export function OfferSection() {
@@ -25,6 +26,7 @@ export function OfferSection() {
             className="h-14 px-12 text-lg font-bold animate-scale-in-out"
           >
             <Link href="https://pagamento.seulink.com/capcut">
+              <Rocket className="mr-2 h-6 w-6" />
               Comprar Agora
             </Link>
           </Button>

@@ -1,9 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
 import { X, TimerIcon } from 'lucide-react';
-import Link from 'next/link';
 
 export function CountdownBanner() {
   const [isVisible, setIsVisible] = useState(true);
@@ -37,7 +35,7 @@ export function CountdownBanner() {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 w-full bg-black/80 backdrop-blur-sm p-4 text-white">
-      <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
+      <div className="container mx-auto flex items-center justify-center gap-4 text-center">
         <div className="flex items-center gap-2">
           <TimerIcon className="h-6 w-6 text-primary" />
           <p className="font-semibold">
@@ -47,9 +45,6 @@ export function CountdownBanner() {
             {formatTime(timeLeft)}
           </span>
         </div>
-        <Button asChild size="sm" className="font-bold animate-scale-in-out text-xs h-8 px-3">
-            <Link href="#oferta">Garantir Desconto</Link>
-        </Button>
         <button
           onClick={() => setIsVisible(false)}
           className="absolute top-2 right-2 text-white/70 hover:text-white transition-colors"
