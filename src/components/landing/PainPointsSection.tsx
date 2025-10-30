@@ -38,7 +38,7 @@ export function PainPointsSection() {
         {painPoints.map((point, index) => (
           <Card
             key={index}
-            className="transform-gpu transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-primary/20"
+            className="transform-gpu transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-primary/20 animate-slow-pulse"
           >
             <CardHeader className="flex flex-row items-center gap-4">
               <div className="rounded-md bg-primary/10 p-3 text-primary">
