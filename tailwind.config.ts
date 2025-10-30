@@ -96,11 +96,21 @@ export default {
           '0%, 100%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.05)' },
         },
+        'slow-pulse': {
+          '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+          '50%': { transform: 'scale(1.05)', opacity: '0.9' },
+        },
+        'rocket-takeoff': {
+          '0%, 100%': { transform: 'translateY(0) rotate(0)' },
+          '50%': { transform: 'translateY(-4px) rotate(3deg)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'scale-in-out': 'scale-in-out 2s ease-in-out infinite',
+        'slow-pulse': 'slow-pulse 3s ease-in-out infinite',
+        'rocket-takeoff': 'rocket-takeoff 2.5s ease-in-out infinite',
       },
     },
   },
