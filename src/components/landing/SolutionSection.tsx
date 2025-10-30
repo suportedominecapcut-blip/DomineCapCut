@@ -32,15 +32,14 @@ export function SolutionSection() {
             ))}
           </ul>
         </div>
-        <div className="relative flex h-full min-h-[400px] items-center justify-center">
-            <Image
-                src="https://images.unsplash.com/photo-1593438997576-6972454b5239?q=80&w=1887&auto=format&fit=crop"
-                alt="Mulher feliz editando vídeo no celular e vendo retorno financeiro"
-                width={500}
-                height={750}
-                className="rounded-2xl object-cover shadow-2xl shadow-primary/20 transition-transform duration-500 hover:scale-105"
-                data-ai-hint="capcut money"
-            />
+        <div className="relative min-h-[400px] w-full h-full rounded-2xl overflow-hidden shadow-2xl shadow-primary/20 transition-transform duration-500 hover:scale-105">
+          <Image
+            src="https://images.unsplash.com/photo-1593438997576-6972454b5239?q=80&w=1887&auto=format&fit=crop"
+            alt="Mulher feliz editando vídeo no celular e vendo retorno financeiro"
+            fill
+            className="object-cover"
+            data-ai-hint="capcut money"
+          />
         </div>
       </div>
     </div>
