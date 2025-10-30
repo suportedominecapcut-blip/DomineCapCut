@@ -1,6 +1,4 @@
 import { CheckCircle2 } from 'lucide-react';
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const benefits = [
   { text: 'Criar vídeos com impacto visual que prendem a atenção.' },
@@ -8,12 +6,6 @@ const benefits = [
   { text: 'Como fazer vídeos que vendem todos os dias.' },
   { text: 'Tudo isso usando apenas o app gratuito CapCut no seu celular.' },
 ];
-
-const getImageUrl = (id: string) =>
-  PlaceHolderImages.find((img) => img.id === id)?.imageUrl || '';
-const getImageHint = (id: string) =>
-  PlaceHolderImages.find((img) => img.id === id)?.imageHint || '';
-
 
 export function SolutionSection() {
   return (
@@ -40,13 +32,13 @@ export function SolutionSection() {
           </ul>
         </div>
         <div className="relative flex h-full min-h-[400px] items-center justify-center">
-            <Image
-                src={getImageUrl("solution-image")}
-                alt="Mulher editando vídeo no celular"
+            <img
+                src="https://i.imgur.com/xOAGdGn.jpg"
+                alt="Mulher editando vídeo no celular com o app CapCut e notas de dinheiro ao lado"
                 width={500}
                 height={333}
                 className="rounded-2xl object-cover shadow-2xl shadow-primary/20 transition-transform duration-500 hover:scale-105"
-                data-ai-hint={getImageHint("solution-image")}
+                data-ai-hint="capcut money"
             />
         </div>
       </div>
