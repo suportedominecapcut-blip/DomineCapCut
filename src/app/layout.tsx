@@ -4,7 +4,7 @@ import { Analytics } from '@/components/analytics';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Curso Domine o CapCut em 3 Dias',
+  title: 'Curso Domine o CapCut em 7 Dias',
   description:
     'Aprenda a editar vídeos profissionais, atrativos e virais direto do seu celular — mesmo que nunca tenha editado antes!',
 };

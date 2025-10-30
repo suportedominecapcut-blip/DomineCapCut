@@ -1,4 +1,5 @@
 import { CheckCircle2 } from 'lucide-react';
+import Image from 'next/image';
 
 const benefits = [
   { text: 'Criar vídeos com impacto visual que prendem a atenção.' },
@@ -14,7 +15,7 @@ export function SolutionSection() {
         <div className="flex flex-col justify-center space-y-6 lg:col-span-2 text-center items-center">
           <div className="space-y-3">
             <h2 className="font-headline text-3xl font-bold tracking-tighter text-primary sm:text-4xl md:text-5xl">
-              A Solução: CapCut Pro em 3 Dias
+              A Solução: CapCut Pro em 7 Dias
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl">
               Este curso é um atalho. Condensamos anos de experiência em um método

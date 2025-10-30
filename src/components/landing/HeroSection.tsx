@@ -27,12 +27,12 @@ export function HeroSection() {
           <div className="flex flex-col items-center justify-center space-y-6">
             <h1 className="font-headline text-4xl font-black tracking-tighter sm:text-5xl xl:text-6xl/none">
               Domine o <span className="text-primary">CapCut</span> e Crie Vídeos
-              Profissionais em 3 Dias
+              Profissionais em 7 Dias
             </h1>
             <div className="flex w-full items-center justify-center">
               <div className="group relative aspect-video w-full max-w-3xl overflow-hidden rounded-xl shadow-2xl shadow-primary/20">
                 <Image
-                  src="https://i.imgur.com/mWwxe2Y.jpg"
+                  src="https://imgur.com/mWwxe2Y.png"
                   alt="Apresentação do Curso CapCut"
                   fill
                   className="object-cover"
