@@ -49,7 +49,7 @@ export function HeroSection() {
                 <Link href="#oferta">Quero Começar Agora</Link>
               </Button>
             </div>
-            <div className="mt-4 space-y-2 text-sm text-muted-foreground">
+            <div className="pt-6 space-y-2 text-sm text-muted-foreground">
                 <p>Descubra o método rápido, prático e testado por quem já vive de vídeos.</p>
                 <p>🎯 Ideal para quem quer vender, criar conteúdo, ou começar a prestar serviços com o celular.</p>
             </div>
