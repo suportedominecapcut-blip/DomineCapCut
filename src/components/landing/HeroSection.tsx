@@ -22,7 +22,7 @@ export function HeroSection() {
       <div className="w-full bg-primary text-primary-foreground py-2 text-center text-sm md:text-base font-bold">
         Oferta Válida Somente Hoje ({currentDate})
       </div>
-      <div className="container mx-auto px-4 md:px-6 pt-12 md:pt-24 lg:pt-32">
+      <div className="container mx-auto px-4 md:px-6 pt-12 md:pt-24 pb-12 md:pb-24">
         <div className="grid gap-6 lg:grid-cols-1 lg:gap-8 text-center">
           <div className="flex flex-col items-center justify-center space-y-6">
             <h1 className="font-headline text-4xl font-black tracking-tighter sm:text-5xl xl:text-6xl/none">
