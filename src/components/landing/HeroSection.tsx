@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from '@/components/ui/button';
-import { PlayCircle } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -31,13 +31,12 @@ export function HeroSection() {
             </h1>
             <div className="flex w-full items-center justify-center">
               <div className="group relative aspect-video w-full max-w-3xl overflow-hidden rounded-xl shadow-2xl shadow-primary/20">
-                <div className="absolute inset-0 bg-secondary" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <PlayCircle className="h-20 w-20 text-primary transition-transform group-hover:scale-110" />
-                </div>
-                <p className="absolute bottom-4 left-4 font-semibold text-foreground">
-                  Assista ao vídeo de apresentação
-                </p>
+                <Image
+                  src="https://i.imgur.com/mWwxe2Y.jpg"
+                  alt="Apresentação do Curso CapCut"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
             <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
