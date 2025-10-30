@@ -9,12 +9,12 @@ const getImageHint = (id: string) =>
 
 const resultsData = [
   {
-    id: 'result-1',
-    text: 'Zero enrolação: você aprende só o que realmente funciona',
-  },
-  {
     id: 'result-2',
     text: 'Resultado em 3 dias, mesmo sem experiência',
+  },
+  {
+    id: 'result-1',
+    text: 'Zero enrolação: você aprende só o que realmente funciona',
   },
   {
     id: 'result-3',
