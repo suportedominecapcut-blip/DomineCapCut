@@ -42,9 +42,9 @@ export function SolutionSection() {
         <div className="relative flex h-full min-h-[400px] items-center justify-center">
             <Image
                 src={getImageUrl("solution-image")}
-                alt="Mulher editando vídeo de maquiagem no celular"
-                width={400}
-                height={550}
+                alt="Pessoa editando vídeo no celular e ganhando dinheiro com o CapCut"
+                width={500}
+                height={333}
                 className="rounded-2xl object-cover shadow-2xl shadow-primary/20 transition-transform duration-500 hover:scale-105"
                 data-ai-hint={getImageHint("solution-image")}
             />
