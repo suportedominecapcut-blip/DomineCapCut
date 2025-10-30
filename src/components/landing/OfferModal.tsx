@@ -19,7 +19,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>{children}</AlertDialogTrigger>
-      <AlertDialogContent className="max-w-md border-primary/50 bg-gradient-to-br from-secondary to-background shadow-lg shadow-primary/20 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
+      <AlertDialogContent className="max-w-md mx-4 border-primary/50 bg-gradient-to-br from-secondary to-background shadow-lg shadow-primary/20 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
         <AlertDialogHeader className="items-center text-center">
           <PartyPopper className="h-12 w-12 text-primary animate-bounce" />
           <AlertDialogTitle className="text-2xl font-bold text-primary">
