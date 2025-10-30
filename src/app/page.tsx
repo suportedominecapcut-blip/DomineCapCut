@@ -6,6 +6,7 @@ import { TestimonialsSection } from '@/components/landing/TestimonialsSection';
 import { FaqSection } from '@/components/landing/FaqSection';
 import { GuaranteeSection } from '@/components/landing/GuaranteeSection';
 import { Footer } from '@/components/landing/Footer';
+import { CountdownBanner } from '@/components/landing/CountdownBanner';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <GuaranteeSection />
       </main>
       <Footer />
+      <CountdownBanner />
     </div>
   );
 }
