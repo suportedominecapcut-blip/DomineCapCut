@@ -11,7 +11,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { PartyPopper } from "lucide-react";
 import Link from "next/link";
 
@@ -19,7 +19,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>{children}</AlertDialogTrigger>
-      <AlertDialogContent className="max-w-md border-primary/50 bg-secondary shadow-lg shadow-primary/20 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
+      <AlertDialogContent className="max-w-md mx-4 border-primary/50 bg-gradient-to-br from-secondary to-background shadow-lg shadow-primary/20 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
         <AlertDialogHeader className="items-center text-center">
           <PartyPopper className="h-12 w-12 text-primary animate-bounce" />
           <AlertDialogTitle className="text-2xl font-bold text-primary">
@@ -31,7 +31,8 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
               Curso CapCut + E-book “Como Ganhar Dinheiro com Edição de Vídeos”!
             </p>
             <p className="text-xl font-bold text-foreground">
-              🔥 Tudo isso de <span className="line-through">R$247,00</span> por apenas{" "}
+              🔥 Tudo isso de{" "}
+              <span className="line-through">R$247,00</span> por apenas{" "}
               <span className="text-primary text-2xl">R$29,90</span>
             </p>
             <p className="font-semibold">
@@ -42,7 +43,9 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
         <AlertDialogFooter className="flex-col-reverse gap-2 sm:flex-row sm:justify-center">
           <AlertDialogCancel asChild>
             <Link
-              className={buttonVariants({ variant: "outline" })}
+              className={`${buttonVariants({
+                variant: "outline",
+              })} animate-scale-in-out`}
               href="https://pay.lowify.com.br/checkout?product_id=EDxGrQ"
             >
               Quero continuar sem o bônus
@@ -50,7 +53,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
           </AlertDialogCancel>
           <AlertDialogAction asChild>
             <Link
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold animate-scale-in-out"
               href="https://pay.lowify.com.br/checkout?product_id=bAPgxy"
             >
               👉 Quero a promoção!
