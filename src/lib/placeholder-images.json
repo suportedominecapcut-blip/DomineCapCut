@@ -20,9 +20,9 @@
     },
     {
       "id": "solution-image",
-      "description": "Person editing video on a phone with money next to it",
-      "imageUrl": "https://storage.googleapis.com/studiopanda-101412.appspot.com/projects/e4eab59a-143f-42a9-b3a6-56f89ef14660/assets/574e9e03-7b44-48f8-b80c-7b4430e3bb45",
-      "imageHint": "video editing money"
+      "description": "Person editing video on a phone",
+      "imageUrl": "https://images.unsplash.com/photo-1721059537509-a0eeaa242bf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2aWRlbyUyMGVkaXRpbmclMjBwaG9uZXxlbnwwfHx8fDE3NjE4MDAyNTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "video editing phone"
     }
   ]
 }
