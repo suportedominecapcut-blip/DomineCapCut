@@ -38,8 +38,8 @@ export function CountdownBanner() {
       <div className="container mx-auto flex items-center justify-center gap-4 text-center">
         <div className="flex items-center gap-2">
           <TimerIcon className="h-6 w-6 text-primary" />
-          <p className="font-semibold">
-            Sua oferta de <span className="font-extrabold">R$19,90</span> expira em:
+          <p className="font-semibold animate-scale-in-out">
+            Sua oferta expira em:
           </p>
           <span className="font-bold text-lg text-primary tabular-nums">
             {formatTime(timeLeft)}
