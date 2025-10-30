@@ -10,7 +10,7 @@ import { CountdownBanner } from '@/components/landing/CountdownBanner';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-[100dvh]">
+    <div className="flex flex-col min-h-[100dvh] bg-black">
       <main className="flex-1">
         <HeroSection />
         <section className="w-full light bg-background text-foreground">
