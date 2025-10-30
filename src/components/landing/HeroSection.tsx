@@ -18,7 +18,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="w-full bg-black">
+    <section className="w-full bg-background">
       <div className="w-full bg-primary text-primary-foreground py-2 text-center text-sm md:text-base font-bold">
         Oferta Válida Somente Hoje ({currentDate})
       </div>
