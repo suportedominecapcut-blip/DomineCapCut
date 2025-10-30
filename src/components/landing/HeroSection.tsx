@@ -18,11 +18,11 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="w-full pt-12 md:pt-24 lg:pt-32">
-      <div className="w-full bg-primary text-primary-foreground py-2 text-center text-sm md:text-base font-bold mb-8">
+    <section className="w-full">
+      <div className="w-full bg-primary text-primary-foreground py-2 text-center text-sm md:text-base font-bold">
         Oferta Válida Somente Hoje ({currentDate})
       </div>
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6 pt-12 md:pt-24 lg:pt-32">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-6">
             <h1 className="font-headline text-4xl font-black tracking-tighter sm:text-5xl xl:text-6xl/none">
