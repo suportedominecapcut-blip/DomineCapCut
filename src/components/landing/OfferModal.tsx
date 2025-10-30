@@ -49,7 +49,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
             <Link
               className={`${buttonVariants({
                 variant: "outline",
-              })} animate-scale-in-out`}
+              })}`}
               href="https://pay.lowify.com.br/checkout?product_id=EDxGrQ"
             >
               Quero continuar sem o bônus
@@ -60,7 +60,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
               className={`${buttonVariants({
                 variant: "default",
               })} animate-scale-in-out`}
-              href="https://pay.lowify.com.br/checkout?product_id=bAPgxy"
+              href="https://pay.lowify.com.br/checkout?product_id=A6bFFP"
             >
               👉 Quero a promoção!
             </Link>
