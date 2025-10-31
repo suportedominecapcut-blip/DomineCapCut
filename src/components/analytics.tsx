@@ -4,11 +4,13 @@ import React from 'react';
 // IMPORTANT: REPLACE THE PLACEHOLDER VALUES BELOW WITH YOUR ACTUAL TRACKING IDS
 const GA_TRACKING_ID = 'G-XXXXXXXXXX'; // Your Google Analytics Tracking ID
 const META_PIXEL_ID = '800912026200250'; // Your Meta Pixel ID
+const UTMIFY_PIXEL_ID = '69042b89cd934fefaa216dd8'; // Your Utmify Pixel ID
 
 export function Analytics() {
   // Don't render scripts if IDs are placeholders
   const isGaConfigured = GA_TRACKING_ID !== 'G-XXXXXXXXXX';
   const isMetaConfigured = META_PIXEL_ID !== 'YOUR_META_PIXEL_ID';
+  const isUtmifyConfigured = UTMIFY_PIXEL_ID !== 'YOUR_UTMIFY_PIXEL_ID';
 
   return (
     <React.Fragment>
@@ -63,6 +65,21 @@ export function Analytics() {
               src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
             />
           </noscript>
+        </>
+      )}
+
+      {isUtmifyConfigured && (
+        <>
+          <Script id="utmify-pixel-config" strategy="afterInteractive">
+            {`window.pixelId = "${UTMIFY_PIXEL_ID}";`}
+          </Script>
+          <Script
+            id="utmify-pixel-script"
+            src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"
+            strategy="afterInteractive"
+            async
+            defer
+          />
         </>
       )}
     </React.Fragment>
