@@ -25,10 +25,10 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
           <AlertDialogTitle className="text-2xl font-bold text-primary">
             🎉 Oferta Exclusiva Desbloqueada!
           </AlertDialogTitle>
-          <AlertDialogDescription className="text-base text-foreground/80 space-y-3 pt-2">
-            <div>
+          <div className="text-base text-foreground/80 space-y-3 pt-2">
+            <AlertDialogDescription>
               Parabéns! Você ganhou acesso a uma <strong>OFERTA ESPECIAL</strong> que inclui:
-            </div>
+            </AlertDialogDescription>
             <ul className="list-disc list-inside text-left mx-auto max-w-sm space-y-1">
                 <li>Curso Completo Domine o CapCut</li>
                 <li>E-book: Como Ganhar Dinheiro com Edição</li>
@@ -42,7 +42,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
             <div className="font-semibold">
               Mas atenção: essa condição é por tempo LIMITADO!
             </div>
-          </AlertDialogDescription>
+          </div>
         </AlertDialogHeader>
         <AlertDialogFooter className="flex-col-reverse gap-2 sm:flex-row sm:justify-center">
           <AlertDialogCancel asChild>
