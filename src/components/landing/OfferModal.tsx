@@ -27,16 +27,17 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
           </AlertDialogTitle>
           <div className="text-base text-foreground/80 space-y-3 pt-2">
             <AlertDialogDescription>
-              Parabéns! Você ganhou acesso a uma <strong>OFERTA ESPECIAL</strong> que inclui:
+              Parabéns! Você ganhou acesso a uma{" "}
+              <strong>OFERTA ESPECIAL</strong> que inclui:
             </AlertDialogDescription>
             <ul className="list-disc list-inside text-left mx-auto max-w-sm space-y-1">
-                <li>Curso Completo Domine o CapCut</li>
-                <li>E-book: Como Ganhar Dinheiro com Edição</li>
-                <li>E-book: Como Editar com IA no CapCut</li>
+              <li>Curso Completo Domine o CapCut</li>
+              <li>E-book: Como Ganhar Dinheiro com Edição</li>
+              <li>E-book: Como Editar com IA no CapCut</li>
             </ul>
             <div className="text-xl font-bold text-foreground">
-              🔥 Tudo isso de{" "}
-              <span className="line-through">R$247,00</span> por apenas{" "}
+              🔥 Tudo isso de <span className="line-through">R$247,00</span> por
+              apenas{" "}
               <span className="text-primary text-2xl">R$29,90</span>
             </div>
             <div className="font-semibold">
@@ -47,20 +48,18 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
         <AlertDialogFooter className="flex-col-reverse gap-2 sm:flex-row sm:justify-center">
           <AlertDialogCancel asChild>
             <Link
-              className={`${buttonVariants({
-                variant: "outline",
-              })}`}
               href="https://pay.lowify.com.br/checkout?product_id=EDxGrQ"
+              className={buttonVariants({ variant: "outline" })}
             >
               Quero continuar sem a oferta exclusiva
             </Link>
           </AlertDialogCancel>
           <AlertDialogAction asChild>
             <Link
+              href="https://pay.lowify.com.br/checkout?product_id=A6bFFP"
               className={`${buttonVariants({
                 variant: "default",
               })} animate-scale-in-out`}
-              href="https://pay.lowify.com.br/checkout?product_id=A6bFFP"
             >
               👉 Quero a promoção!
             </Link>
