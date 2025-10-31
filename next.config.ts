@@ -47,6 +47,12 @@ const nextConfig: NextConfig = {
         hostname: 'imgur.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.utmify.com.br',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
