@@ -52,7 +52,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
               })}`}
               href="https://pay.lowify.com.br/checkout?product_id=EDxGrQ"
             >
-              Quero continuar sem o bônus
+              Quero continuar sem a oferta exclusiva
             </Link>
           </AlertDialogCancel>
           <AlertDialogAction asChild>
