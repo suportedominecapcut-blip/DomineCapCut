@@ -30,7 +30,7 @@ export function HeroSection() {
               Profissionais em 7 Dias
             </h1>
             <div className="flex w-full items-center justify-center">
-              <div className="group relative aspect-video w-full max-w-3xl overflow-hidden rounded-xl shadow-2xl shadow-primary/20">
+              <div className="group relative aspect-video w-full max-w-3xl overflow-hidden rounded-xl">
                 <Image
                   src="https://i.imgur.com/oW9WXfZ.jpg"
                   alt="Mulher editando vídeo no celular com o CapCut e notas de dinheiro ao lado"
