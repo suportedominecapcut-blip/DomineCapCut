@@ -25,24 +25,22 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
           <AlertDialogTitle className="text-2xl font-bold text-primary">
             🎉 Oferta Exclusiva Desbloqueada!
           </AlertDialogTitle>
-          <AlertDialogDescription asChild>
-            <div className="text-base text-foreground/80 space-y-3 pt-2">
-              <div>
-                Parabéns! Você ganhou acesso a uma <strong>OFERTA ESPECIAL</strong> que inclui:
-              </div>
-              <ul className="list-disc list-inside text-left mx-auto max-w-sm space-y-1">
-                  <li>Curso Completo Domine o CapCut</li>
-                  <li>E-book: Como Ganhar Dinheiro com Edição</li>
-                  <li>E-book: Como Editar com IA no CapCut</li>
-              </ul>
-              <div className="text-xl font-bold text-foreground">
-                🔥 Tudo isso de{" "}
-                <span className="line-through">R$247,00</span> por apenas{" "}
-                <span className="text-primary text-2xl">R$29,90</span>
-              </div>
-              <div className="font-semibold">
-                Mas atenção: essa condição é por tempo LIMITADO!
-              </div>
+          <AlertDialogDescription className="text-base text-foreground/80 space-y-3 pt-2">
+            <div>
+              Parabéns! Você ganhou acesso a uma <strong>OFERTA ESPECIAL</strong> que inclui:
+            </div>
+            <ul className="list-disc list-inside text-left mx-auto max-w-sm space-y-1">
+                <li>Curso Completo Domine o CapCut</li>
+                <li>E-book: Como Ganhar Dinheiro com Edição</li>
+                <li>E-book: Como Editar com IA no CapCut</li>
+            </ul>
+            <div className="text-xl font-bold text-foreground">
+              🔥 Tudo isso de{" "}
+              <span className="line-through">R$247,00</span> por apenas{" "}
+              <span className="text-primary text-2xl">R$29,90</span>
+            </div>
+            <div className="font-semibold">
+              Mas atenção: essa condição é por tempo LIMITADO!
             </div>
           </AlertDialogDescription>
         </AlertDialogHeader>
