@@ -2,14 +2,13 @@
 
 import {
   AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
+  AlertDialogCancel,
 } from "@/components/ui/alert-dialog";
 import { buttonVariants } from "@/components/ui/button";
 import { Check, PartyPopper } from "lucide-react";
@@ -69,23 +68,18 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
         </div>
 
         <AlertDialogFooter className="flex-col gap-2 border-t border-border bg-background/20 px-6 pb-8 pt-6 sm:flex-row sm:justify-center">
-            <AlertDialogAction asChild>
-                <Link
-                href="https://pay.lowify.com.br/checkout?product_id=A6bFFP"
-                className={`${buttonVariants({
-                    size: 'lg',
-                })} h-12 w-full text-base font-bold sm:w-auto animate-scale-in-out`}
-                >
-                👉 Sim, quero a promoção!
-                </Link>
-            </AlertDialogAction>
-            <AlertDialogCancel asChild>
-                <Link
-                href="https://pay.lowify.com.br/checkout?product_id=EDxGrQ"
-                className={buttonVariants({ variant: "outline", size: 'lg' })}
-                >
-                Não, obrigado.
-                </Link>
+          <Link
+            href="https://pay.lowify.com.br/checkout?product_id=A6bFFP"
+            className={`${buttonVariants({
+              size: "lg",
+            })} h-12 w-full text-base font-bold sm:w-auto animate-scale-in-out`}
+          >
+            👉 Sim, quero a promoção!
+          </Link>
+          <AlertDialogCancel
+            className={buttonVariants({ variant: "outline", size: "lg" })}
+          >
+            Não, obrigado.
           </AlertDialogCancel>
         </AlertDialogFooter>
       </AlertDialogContent>
