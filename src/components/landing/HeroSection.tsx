@@ -2,8 +2,8 @@
 
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { OfferModal } from './OfferModal';
 
 export function HeroSection() {
   const [currentDate, setCurrentDate] = useState('');
@@ -46,9 +46,11 @@ export function HeroSection() {
               seu celular — mesmo que nunca tenha editado antes!
             </p>
             <div className="flex flex-col gap-4 min-[400px]:flex-row">
-              <Button asChild size="lg" className="font-bold animate-scale-in-out">
-                <Link href="#oferta">Quero Começar Agora</Link>
-              </Button>
+              <OfferModal>
+                <Button size="lg" className="font-bold animate-scale-in-out">
+                  Quero Começar Agora
+                </Button>
+              </OfferModal>
             </div>
             <div className="pt-6 space-y-2 text-sm text-muted-foreground">
                 <p>Descubra o método rápido, prático e testado por quem já vive de vídeos.</p>
