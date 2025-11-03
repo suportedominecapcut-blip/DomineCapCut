@@ -19,21 +19,21 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>{children}</AlertDialogTrigger>
-      <AlertDialogContent className="w-[calc(100%-2rem)] max-w-lg border-primary/50 bg-secondary shadow-lg shadow-primary/20 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 p-0">
-        <AlertDialogHeader className="items-center text-center space-y-4 p-6 pb-4">
-          <PartyPopper className="h-16 w-16 text-primary animate-bounce" />
-          <AlertDialogTitle className="text-3xl font-extrabold text-primary">
-            Oferta Exclusiva Desbloqueada!
-          </AlertDialogTitle>
-          <AlertDialogDescription className="text-lg text-foreground/80 max-w-md mx-auto">
-            Parabéns! Você ganhou acesso a uma condição especial por tempo limitado.
-          </AlertDialogDescription>
-        </AlertDialogHeader>
+      <AlertDialogContent className="w-[calc(100%-2rem)] max-w-lg border-primary/50 bg-secondary shadow-lg shadow-primary/20 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 p-0 overflow-hidden">
+        <div className="p-6">
+            <AlertDialogHeader className="items-center text-center space-y-4 pb-4">
+            <PartyPopper className="h-16 w-16 text-primary animate-bounce" />
+            <AlertDialogTitle className="text-3xl font-extrabold text-primary">
+                Oferta Exclusiva Desbloqueada!
+            </AlertDialogTitle>
+            <AlertDialogDescription className="text-lg text-foreground/80 max-w-md mx-auto">
+                Parabéns! Você ganhou acesso a uma condição especial por tempo limitado.
+            </AlertDialogDescription>
+            </AlertDialogHeader>
 
-        <div className="px-6 pb-6">
-            <div className="bg-background/50 rounded-lg p-6 space-y-4 border border-border">
+            <div className="bg-background/50 rounded-lg p-6 space-y-4 border border-border mt-4">
                 <h3 className="font-bold text-center text-lg text-foreground">O que você recebe:</h3>
-                 <ul className="space-y-3 text-left">
+                <ul className="space-y-3 text-left">
                     <li className="flex items-start gap-3">
                         <Check className="h-5 w-5 mt-1 flex-shrink-0 text-primary" />
                         <span className="text-foreground/90">Curso Completo Domine o CapCut</span>
@@ -55,14 +55,12 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
             </div>
         </div>
 
-
-        <AlertDialogFooter className="flex-col gap-2 px-6 pb-8 pt-0 border-t border-border/50 bg-background/20 pt-6">
+        <AlertDialogFooter className="flex-col gap-2 px-6 pb-8 pt-6 border-t border-border bg-background/20">
             <AlertDialogAction asChild>
                 <Link
                 href="https://pay.lowify.com.br/checkout?product_id=A6bFFP"
                 className={`${buttonVariants({
                     size: 'lg',
-                    variant: "default",
                 })} w-full h-12 text-base font-bold animate-scale-in-out`}
                 >
                 👉 Sim, quero a promoção!
