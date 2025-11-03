@@ -12,58 +12,70 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { buttonVariants } from "@/components/ui/button";
-import { PartyPopper } from "lucide-react";
+import { Check, PartyPopper } from "lucide-react";
 import Link from "next/link";
 
 export function OfferModal({ children }: { children: React.ReactNode }) {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>{children}</AlertDialogTrigger>
-      <AlertDialogContent className="w-[calc(100%-2rem)] max-w-md border-primary/50 bg-gradient-to-br from-secondary to-background shadow-lg shadow-primary/20 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
-        <AlertDialogHeader className="items-center text-center">
-          <PartyPopper className="h-12 w-12 text-primary animate-bounce" />
-          <AlertDialogTitle className="text-2xl font-bold text-primary">
-            🎉 Oferta Exclusiva Desbloqueada!
+      <AlertDialogContent className="w-[calc(100%-2rem)] max-w-lg border-primary/50 bg-secondary shadow-lg shadow-primary/20 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95">
+        <AlertDialogHeader className="items-center text-center space-y-4 p-4 sm:p-6">
+          <PartyPopper className="h-16 w-16 text-primary animate-bounce" />
+          <AlertDialogTitle className="text-3xl font-extrabold text-primary">
+            Oferta Exclusiva Desbloqueada!
           </AlertDialogTitle>
-          <div className="text-base text-foreground/80 space-y-3 pt-2">
-            <AlertDialogDescription>
-              Parabéns! Você ganhou acesso a uma{" "}
-              <strong>OFERTA ESPECIAL</strong> que inclui:
-            </AlertDialogDescription>
-            <ul className="list-disc list-inside text-left mx-auto max-w-sm space-y-1">
-              <li>Curso Completo Domine o CapCut</li>
-              <li>E-book: Como Ganhar Dinheiro com Edição</li>
-              <li>E-book: Como Editar com IA no CapCut</li>
-            </ul>
-            <div className="text-xl font-bold text-foreground">
-              🔥 Tudo isso de <span className="line-through">R$247,00</span> por
-              apenas{" "}
-              <span className="text-primary text-2xl">R$29,90</span>
-            </div>
-            <div className="font-semibold">
-              Mas atenção: essa condição é por tempo LIMITADO!
-            </div>
-          </div>
+          <AlertDialogDescription className="text-lg text-foreground/80 max-w-md mx-auto">
+            Parabéns! Você ganhou acesso a uma condição especial por tempo limitado.
+          </AlertDialogDescription>
         </AlertDialogHeader>
-        <AlertDialogFooter className="flex-col-reverse gap-2 sm:flex-row sm:justify-center">
-          <AlertDialogCancel asChild>
-            <Link
-              href="https://pay.lowify.com.br/checkout?product_id=EDxGrQ"
-              className={buttonVariants({ variant: "outline" })}
-            >
-              Quero continuar sem a oferta exclusiva
-            </Link>
+
+        <div className="px-4 sm:px-6 pb-4">
+            <div className="bg-background/50 rounded-lg p-6 space-y-4 border border-border">
+                <h3 className="font-bold text-center text-lg text-foreground">O que você recebe:</h3>
+                 <ul className="space-y-3 text-left">
+                    <li className="flex items-start gap-3">
+                        <Check className="h-5 w-5 mt-1 flex-shrink-0 text-primary" />
+                        <span className="text-foreground/90">Curso Completo Domine o CapCut</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <Check className="h-5 w-5 mt-1 flex-shrink-0 text-primary" />
+                        <span className="text-foreground/90">E-book: Como Ganhar Dinheiro com Edição</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <Check className="h-5 w-5 mt-1 flex-shrink-0 text-primary" />
+                        <span className="text-foreground/90">E-book: Como Editar com IA no CapCut</span>
+                    </li>
+                </ul>
+                <div className="text-center bg-primary/10 border border-primary/20 rounded-lg p-4 mt-4">
+                    <p className="text-foreground/80">De <span className="line-through">R$247,00</span> por apenas:</p>
+                    <p className="text-4xl font-black text-primary my-1">R$29,90</p>
+                    <p className="text-xs text-foreground/60">(Pagamento único, acesso vitalício)</p>
+                </div>
+            </div>
+        </div>
+
+
+        <AlertDialogFooter className="flex-col gap-2 px-4 sm:px-6 pb-6 sm:pb-8 pt-2">
+            <AlertDialogAction asChild>
+                <Link
+                href="https://pay.lowify.com.br/checkout?product_id=A6bFFP"
+                className={`${buttonVariants({
+                    size: 'lg',
+                    variant: "default",
+                })} w-full h-12 text-base font-bold animate-scale-in-out`}
+                >
+                👉 Sim, quero a promoção!
+                </Link>
+            </AlertDialogAction>
+            <AlertDialogCancel asChild>
+                <Link
+                href="https://pay.lowify.com.br/checkout?product_id=EDxGrQ"
+                className={buttonVariants({ variant: "link", size: 'sm' })}
+                >
+                Não, obrigado. Quero continuar com o valor normal.
+                </Link>
           </AlertDialogCancel>
-          <AlertDialogAction asChild>
-            <Link
-              href="https://pay.lowify.com.br/checkout?product_id=A6bFFP"
-              className={`${buttonVariants({
-                variant: "default",
-              })} animate-scale-in-out`}
-            >
-              👉 Quero a promoção!
-            </Link>
-          </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
