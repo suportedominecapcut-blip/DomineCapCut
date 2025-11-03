@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/dialog";
 import { buttonVariants } from "@/components/ui/button";
 import { Check, PartyPopper } from "lucide-react";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 export function OfferModal({ children }: { children: React.ReactNode }) {
