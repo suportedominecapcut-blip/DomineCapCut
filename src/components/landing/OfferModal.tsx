@@ -80,7 +80,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
             👉 Sim, quero a promoção!
           </a>
           <a
-            href="https://pay.lowify.com.br/checkout?product_id=A6bFFP&price=19.90"
+            href="https://pay.lowify.com.br/checkout?product_id=EDxGrQ"
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
