@@ -3,8 +3,21 @@
 import { Button } from '@/components/ui/button';
 import { Rocket } from 'lucide-react';
 import { OfferModal } from './OfferModal';
+import { useEffect, useState } from 'react';
 
 export function OfferSection() {
+  const [currentDate, setCurrentDate] = useState('');
+
+  useEffect(() => {
+    const date = new Date();
+    const formattedDate = new Intl.DateTimeFormat('pt-BR', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+    }).format(date);
+    setCurrentDate(formattedDate);
+  }, []);
+
   return (
     <div
       id="oferta"
@@ -12,7 +25,7 @@ export function OfferSection() {
     >
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="font-headline text-sm font-semibold uppercase tracking-widest text-primary">
-          Oferta Válida Somente Hoje
+          Oferta Válida Somente até {currentDate}
         </h2>
         <p className="mt-4 text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
           De <span className="line-through decoration-red-500">R$197,00</span>{' '}
