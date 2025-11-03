@@ -13,6 +13,7 @@ export function HeroSection() {
     const formattedDate = new Intl.DateTimeFormat('pt-BR', {
       day: '2-digit',
       month: '2-digit',
+      year: 'numeric',
     }).format(date);
     setCurrentDate(formattedDate);
   }, []);
@@ -20,7 +21,7 @@ export function HeroSection() {
   return (
     <section className="w-full bg-background">
       <div className="w-full bg-primary text-primary-foreground py-2 text-center text-sm md:text-base font-bold">
-        Oferta Válida Somente Hoje ({currentDate})
+        {currentDate}
       </div>
       <div className="container mx-auto px-4 md:px-6 pt-12 md:pt-24 pb-12 md:pb-24">
         <div className="grid gap-6 lg:grid-cols-1 lg:gap-8 text-center">
