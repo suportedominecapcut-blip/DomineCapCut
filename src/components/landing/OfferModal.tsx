@@ -80,14 +80,17 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
           >
             👉 Sim, quero a promoção!
           </a>
-          <DialogClose asChild>
-            <button
-              type="button"
-              className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
-            >
-              Não, obrigado.
-            </button>
-          </DialogClose>
+          <a
+            href="https://pay.lowify.com.br/checkout?product_id=A6bFFP&price=19.90"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              buttonVariants({ variant: "outline", size: "lg" }),
+              "h-12 w-full sm:w-auto"
+            )}
+          >
+            Não, obrigado.
+          </a>
         </DialogFooter>
       </DialogContent>
     </Dialog>
