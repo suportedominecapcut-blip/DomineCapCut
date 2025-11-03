@@ -1,36 +1,36 @@
 "use client";
 
 import {
-  AlertDialog,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-  AlertDialogCancel,
-  AlertDialogAction,
-} from "@/components/ui/alert-dialog";
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogFooter,
+  DialogClose,
+} from "@/components/ui/dialog";
 import { buttonVariants } from "@/components/ui/button";
 import { Check, PartyPopper } from "lucide-react";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 export function OfferModal({ children }: { children: React.ReactNode }) {
   return (
-    <AlertDialog>
-      <AlertDialogTrigger asChild>{children}</AlertDialogTrigger>
-      <AlertDialogContent className="w-[calc(100%-2rem)] max-w-2xl p-0">
+    <Dialog>
+      <DialogTrigger asChild>{children}</DialogTrigger>
+      <DialogContent className="w-[calc(100%-2rem)] max-w-2xl p-0 overflow-hidden">
         <div className="p-6">
-          <AlertDialogHeader className="items-center space-y-4 text-center">
+          <DialogHeader className="items-center space-y-4 text-center">
             <PartyPopper className="h-16 w-16 animate-bounce text-primary" />
-            <AlertDialogTitle className="text-3xl font-extrabold text-primary">
+            <DialogTitle className="text-3xl font-extrabold text-primary">
               Oferta Exclusiva Desbloqueada!
-            </AlertDialogTitle>
-            <AlertDialogDescription className="mx-auto max-w-md text-lg text-foreground/80">
+            </DialogTitle>
+            <DialogDescription className="mx-auto max-w-md text-lg text-foreground/80">
               Parabéns! Você ganhou acesso a uma condição especial por tempo
               limitado.
-            </AlertDialogDescription>
-          </AlertDialogHeader>
+            </DialogDescription>
+          </DialogHeader>
 
           <div className="mt-6 rounded-lg border border-border bg-background/50 p-6 space-y-4">
             <h3 className="text-center text-lg font-bold text-foreground">
@@ -68,26 +68,28 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
           </div>
         </div>
 
-        <AlertDialogFooter className="flex-col gap-2 border-t border-border bg-background/20 px-6 pb-8 pt-6 sm:flex-row sm:justify-center">
-          <AlertDialogAction asChild>
-            <a
-              href="https://pay.lowify.com.br/checkout?product_id=A6bFFP"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${buttonVariants({
-                size: "lg",
-              })} h-12 w-full text-base font-bold sm:w-auto animate-scale-in-out`}
-            >
-              👉 Sim, quero a promoção!
-            </a>
-          </AlertDialogAction>
-          <AlertDialogCancel
-            className={buttonVariants({ variant: "outline", size: "lg" })}
+        <DialogFooter className="flex-col gap-2 border-t border-border bg-background/20 px-6 pb-8 pt-6 sm:flex-row sm:justify-center">
+          <a
+            href="https://pay.lowify.com.br/checkout?product_id=A6bFFP"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "h-12 w-full text-base font-bold sm:w-auto animate-scale-in-out"
+            )}
           >
-            Não, obrigado.
-          </AlertDialogCancel>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
+            👉 Sim, quero a promoção!
+          </a>
+          <DialogClose asChild>
+            <button
+              type="button"
+              className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
+            >
+              Não, obrigado.
+            </button>
+          </DialogClose>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
   );
 }
