@@ -18,20 +18,20 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="w-[calc(100%-2rem)] max-w-2xl p-0 overflow-hidden">
-        <DialogHeader className="p-4 pb-2 sm:p-6 sm:pb-2 items-center space-y-2 text-center">
-          <PartyPopper className="h-10 w-10 sm:h-14 sm:w-14 animate-bounce text-primary" />
-          <DialogTitle className="text-xl sm:text-3xl font-extrabold text-primary">
+      <DialogContent className="w-[calc(100%-2rem)] max-h-[90svh] overflow-y-auto p-0 flex flex-col">
+        <DialogHeader className="p-4 pb-2 sm:p-6 sm:pb-2 items-center space-y-2 text-center flex-shrink-0">
+          <PartyPopper className="h-10 w-10 sm:h-12 sm:w-12 animate-bounce text-primary" />
+          <DialogTitle className="text-xl sm:text-2xl font-extrabold text-primary">
             Oferta Exclusiva Desbloqueada!
           </DialogTitle>
-          <DialogDescription className="mx-auto max-w-md text-sm sm:text-lg text-foreground/80">
+          <DialogDescription className="mx-auto max-w-md text-sm sm:text-base text-foreground/80">
             Parabéns! Você ganhou acesso a uma condição especial por tempo
             limitado.
           </DialogDescription>
         </DialogHeader>
 
-        <div className="px-4 sm:px-6">
-          <div className="mt-2 rounded-lg border border-border bg-background/50 p-4 space-y-3">
+        <div className="px-4 sm:px-6 py-2 flex-grow">
+          <div className="rounded-lg border border-border bg-background/50 p-4 space-y-3">
             <h3 className="text-center text-base sm:text-lg font-bold text-foreground">
               O que você recebe:
             </h3>
@@ -67,7 +67,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
           </div>
         </div>
 
-        <DialogFooter className="flex-col gap-2 p-4 sm:p-6 sm:flex-row sm:justify-center">
+        <DialogFooter className="flex-col gap-2 p-4 sm:p-6 sm:flex-row sm:justify-center flex-shrink-0">
           <a
             href="https://pay.lowify.com.br/checkout?product_id=A6bFFP"
             target="_blank"
