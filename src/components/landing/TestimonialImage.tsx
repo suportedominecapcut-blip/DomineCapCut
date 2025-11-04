@@ -9,7 +9,7 @@ export function TestimonialImage({ src, alt }: { src: string; alt: string }) {
         src={src}
         alt={alt}
         fill
-        className="object-contain"
+        className="object-cover object-top"
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
     </div>
