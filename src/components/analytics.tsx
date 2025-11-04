@@ -3,7 +3,7 @@ import React from 'react';
 
 // IMPORTANT: REPLACE THE PLACEHOLDER VALUES BELOW WITH YOUR ACTUAL TRACKING IDS
 const GA_TRACKING_ID = 'G-XXXXXXXXXX'; // Your Google Analytics Tracking ID
-const META_PIXEL_ID = '800912026200250'; // Your Meta Pixel ID
+const META_PIXEL_ID = '1881668555769628'; // Your Meta Pixel ID
 const UTMIFY_PIXEL_ID = '69042b89cd934fefaa216dd8'; // Your Utmify Pixel ID
 
 export function Analytics() {
