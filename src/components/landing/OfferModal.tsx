@@ -1,3 +1,4 @@
+
 "use client";
 
 import {
@@ -17,20 +18,20 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="w-[calc(100%-2rem)] max-w-2xl p-0 overflow-hidden">
-        <div className="p-6">
-          <DialogHeader className="items-center space-y-4 text-center">
-            <PartyPopper className="h-12 w-12 sm:h-16 sm:w-16 animate-bounce text-primary" />
-            <DialogTitle className="text-2xl sm:text-3xl font-extrabold text-primary">
-              Oferta Exclusiva Desbloqueada!
-            </DialogTitle>
-            <DialogDescription className="mx-auto max-w-md text-base sm:text-lg text-foreground/80">
-              Parabéns! Você ganhou acesso a uma condição especial por tempo
-              limitado.
-            </DialogDescription>
-          </DialogHeader>
+      <DialogContent className="w-[calc(100%-2rem)] max-w-2xl p-0 overflow-hidden flex flex-col max-h-[90svh]">
+        <DialogHeader className="p-6 pb-2 items-center space-y-2 text-center shrink-0">
+          <PartyPopper className="h-12 w-12 sm:h-14 sm:w-14 animate-bounce text-primary" />
+          <DialogTitle className="text-xl sm:text-3xl font-extrabold text-primary">
+            Oferta Exclusiva Desbloqueada!
+          </DialogTitle>
+          <DialogDescription className="mx-auto max-w-md text-base sm:text-lg text-foreground/80">
+            Parabéns! Você ganhou acesso a uma condição especial por tempo
+            limitado.
+          </DialogDescription>
+        </DialogHeader>
 
-          <div className="mt-6 rounded-lg border border-border bg-background/50 p-4 sm:p-6 space-y-4">
+        <div className="px-6 flex-1 overflow-y-auto">
+          <div className="mt-2 rounded-lg border border-border bg-background/50 p-4 sm:p-6 space-y-4">
             <h3 className="text-center text-lg font-bold text-foreground">
               O que você recebe:
             </h3>
@@ -66,7 +67,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
           </div>
         </div>
 
-        <DialogFooter className="flex-col gap-2 border-t border-border bg-background/20 px-6 pb-8 pt-6 sm:flex-row sm:justify-center">
+        <DialogFooter className="flex-col gap-2 border-t border-border bg-background/20 px-6 pb-6 pt-4 sm:flex-row sm:justify-center shrink-0">
           <a
             href="https://pay.lowify.com.br/checkout?product_id=A6bFFP"
             target="_blank"
