@@ -18,24 +18,24 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="w-[calc(100%-2rem)] max-w-2xl p-0 overflow-hidden flex flex-col max-h-[90svh]">
-        <DialogHeader className="p-6 pb-2 items-center space-y-2 text-center shrink-0">
-          <PartyPopper className="h-12 w-12 sm:h-14 sm:w-14 animate-bounce text-primary" />
+      <DialogContent className="w-[calc(100%-2rem)] max-w-2xl p-0 overflow-hidden">
+        <DialogHeader className="p-4 pb-2 sm:p-6 sm:pb-2 items-center space-y-2 text-center">
+          <PartyPopper className="h-10 w-10 sm:h-14 sm:w-14 animate-bounce text-primary" />
           <DialogTitle className="text-xl sm:text-3xl font-extrabold text-primary">
             Oferta Exclusiva Desbloqueada!
           </DialogTitle>
-          <DialogDescription className="mx-auto max-w-md text-base sm:text-lg text-foreground/80">
+          <DialogDescription className="mx-auto max-w-md text-sm sm:text-lg text-foreground/80">
             Parabéns! Você ganhou acesso a uma condição especial por tempo
             limitado.
           </DialogDescription>
         </DialogHeader>
 
-        <div className="px-6 flex-1 overflow-y-auto">
-          <div className="mt-2 rounded-lg border border-border bg-background/50 p-4 sm:p-6 space-y-4">
-            <h3 className="text-center text-lg font-bold text-foreground">
+        <div className="px-4 sm:px-6">
+          <div className="mt-2 rounded-lg border border-border bg-background/50 p-4 space-y-3">
+            <h3 className="text-center text-base sm:text-lg font-bold text-foreground">
               O que você recebe:
             </h3>
-            <ul className="space-y-3 text-left text-sm sm:text-base">
+            <ul className="space-y-2 text-left text-sm">
               <li className="flex items-start gap-3">
                 <Check className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                 <span className="text-foreground/90">
@@ -55,8 +55,8 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
                 </span>
               </li>
             </ul>
-            <div className="mt-6 rounded-lg border border-primary/20 bg-primary/10 p-4 text-center">
-              <p className="text-foreground/80">
+            <div className="mt-4 rounded-lg border border-primary/20 bg-primary/10 p-3 text-center">
+              <p className="text-sm text-foreground/80">
                 De <span className="line-through">R$247,00</span> por apenas:
               </p>
               <p className="my-1 text-3xl sm:text-4xl font-black text-primary">R$29,90</p>
@@ -67,7 +67,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
           </div>
         </div>
 
-        <DialogFooter className="flex-col gap-2 border-t border-border bg-background/20 px-6 pb-6 pt-4 sm:flex-row sm:justify-center shrink-0">
+        <DialogFooter className="flex-col gap-2 p-4 sm:p-6 sm:flex-row sm:justify-center">
           <a
             href="https://pay.lowify.com.br/checkout?product_id=A6bFFP"
             target="_blank"
