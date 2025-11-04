@@ -8,7 +8,6 @@ import {
   DialogTitle,
   DialogTrigger,
   DialogFooter,
-  DialogClose,
 } from "@/components/ui/dialog";
 import { buttonVariants } from "@/components/ui/button";
 import { Check, PartyPopper } from "lucide-react";
@@ -21,21 +20,21 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
       <DialogContent className="w-[calc(100%-2rem)] max-w-2xl p-0 overflow-hidden">
         <div className="p-6">
           <DialogHeader className="items-center space-y-4 text-center">
-            <PartyPopper className="h-16 w-16 animate-bounce text-primary" />
-            <DialogTitle className="text-3xl font-extrabold text-primary">
+            <PartyPopper className="h-12 w-12 sm:h-16 sm:w-16 animate-bounce text-primary" />
+            <DialogTitle className="text-2xl sm:text-3xl font-extrabold text-primary">
               Oferta Exclusiva Desbloqueada!
             </DialogTitle>
-            <DialogDescription className="mx-auto max-w-md text-lg text-foreground/80">
+            <DialogDescription className="mx-auto max-w-md text-base sm:text-lg text-foreground/80">
               Parabéns! Você ganhou acesso a uma condição especial por tempo
               limitado.
             </DialogDescription>
           </DialogHeader>
 
-          <div className="mt-6 rounded-lg border border-border bg-background/50 p-6 space-y-4">
+          <div className="mt-6 rounded-lg border border-border bg-background/50 p-4 sm:p-6 space-y-4">
             <h3 className="text-center text-lg font-bold text-foreground">
               O que você recebe:
             </h3>
-            <ul className="space-y-3 text-left">
+            <ul className="space-y-3 text-left text-sm sm:text-base">
               <li className="flex items-start gap-3">
                 <Check className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
                 <span className="text-foreground/90">
@@ -59,7 +58,7 @@ export function OfferModal({ children }: { children: React.ReactNode }) {
               <p className="text-foreground/80">
                 De <span className="line-through">R$247,00</span> por apenas:
               </p>
-              <p className="my-1 text-4xl font-black text-primary">R$29,90</p>
+              <p className="my-1 text-3xl sm:text-4xl font-black text-primary">R$29,90</p>
               <p className="text-xs text-foreground/60">
                 (Pagamento único, acesso vitalício)
               </p>
