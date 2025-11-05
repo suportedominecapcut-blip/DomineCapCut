@@ -9,7 +9,7 @@ const UTMIFY_PIXEL_ID = '69042b89cd934fefaa216dd8'; // Your Utmify Pixel ID
 export function Analytics() {
   // Don't render scripts if IDs are placeholders
   const isGaConfigured = GA_TRACKING_ID !== 'G-XXXXXXXXXX';
-  const isMetaConfigured = META_PIXEL_ID !== 'YOUR_META_PIXEL_ID';
+  const isMetaConfigured = META_PIXEL_ID !== 'YOUR_META_PIXEL_ID' && META_PIXEL_ID !== '1881668555769628';
   const isUtmifyConfigured = UTMIFY_PIXEL_ID !== 'YOUR_UTMIFY_PIXEL_ID';
 
   return (
@@ -37,8 +37,7 @@ export function Analytics() {
         </>
       )}
 
-      {isMetaConfigured && (
-        <>
+      
           <Script
             id="meta-pixel"
             strategy="afterInteractive"
@@ -52,7 +51,7 @@ export function Analytics() {
                 t.src=v;s=b.getElementsByTagName(e)[0];
                 s.parentNode.insertBefore(t,s)}(window, document,'script',
                 'https://connect.facebook.net/en_US/fbevents.js');
-                fbq('init', '${META_PIXEL_ID}');
+                fbq('init', '1881668555769628');
                 fbq('track', 'PageView');
               `,
             }}
@@ -62,11 +61,10 @@ export function Analytics() {
               height="1"
               width="1"
               style={{ display: 'none' }}
-              src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
+              src="https://www.facebook.com/tr?id=1881668555769628&ev=PageView&noscript=1"
             />
           </noscript>
-        </>
-      )}
+        
 
       {isUtmifyConfigured && (
         <>
